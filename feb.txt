@@ -1,0 +1,300 @@
+Question 1:
+   a)
+Anonymous:To find odd numbers
+ let a=[1,2,3,4,5,6];
+ var odd=function(){
+ let o=a.filter(n=>n%2!=0);
+ return o;
+ }
+ console.log(odd());
+
+
+ IIFE:To find odd numbers
+ let a=[1,2,3,4,5,6];
+ (function(){
+ let o=a.filter(n=>n%2!=0);
+ console.log(o);
+ })
+ ();
+
+    b))
+Anonymous function:Convert all the strings to title caps in a string array
+let a="India is my country";
+let b=a.split(" ");
+let e=[];
+var t=function(){
+for(let i=0;i<b.length;i++){
+  let c=b[i];
+   let d=c.charAt(0).toUpperCase()+c.slice(1,c.length);
+   e.push(d);
+}
+ return e.join(" ");
+}
+console.log(t());
+
+
+IIFE:Convert all the strings to title caps in a string array
+let a="India is my country";
+let b=a.split(" ");
+let e=[];
+(function foo(){
+for(let i=0;i<b.length;i++){
+  let c=b[i];
+   let d=c.charAt(0).toUpperCase()+c.slice(1,c.length);
+   e.push(d);
+   
+}
+ console.log(e.join(" "));
+})
+();
+
+           c)
+Anonymous:To sum all the numbers in an array
+let a=[1,2,3,4,5,6];
+var sum=function(){
+let c=a.reduce((acc,ele)=>acc+ele);
+return (c);
+
+}
+console.log(sum());
+
+IIFE:To sum all the numbers in an array
+let a=[1,2,3,4,5,6];
+(function(){
+let o=a.reduce((acc,ele)=>acc+ele);
+console.log(o);
+})
+();
+        d)
+Anonymous:Return all the prime numbers in an array
+var numArray=[2,3,4,5,6,7,8,9]
+let a=function(){
+  let b=numArray.filter((number)=>{
+    for(let i=2;i<=Math.sqrt(number);i++){
+      if(number%i===0)return false;
+    }
+    return true;
+  });
+    return b;
+  }
+console.log(a());
+
+IIFE:Return all the prime numbers in an array
+ 
+(function a(){
+  var numArray=[2,3,4,5,6,7,8,9]
+  let b=numArray.filter((number)=>{
+    for(let i=2;i<=Math.sqrt(number);i++){
+      if(number%i===0)return false;
+    }
+   return true
+  });
+    console.log(b);
+  })
+  ();          
+
+
+          e)
+Anonymous: return all the palindromes in an array    
+var arr=["dad","mad","cat","mom"];
+var b=[];
+var palindrome=function(){  
+  for(let i=0;i<arr.length;i++){
+    let a=arr[i].split("").reverse().join("");
+     if(arr[i]==a){
+       b.push(a);
+      }  
+  }
+  return b;
+ 
+}
+console.log(palindrome());
+
+IIFE: return all the palindromes in an array
+var arr=["dad","mad","cat","mom"];
+let b=[];
+(function foo(){
+   for(let i=0;i<arr.length;i++){
+    let a=arr[i].split("").reverse().join("");
+     if(arr[i]==a){
+     b.push(a);
+      }  
+      } 
+      console.log (b);
+  })
+();    
+
+            f)
+Anonymous:Return the median of two sorted arrays of same size
+let a=[1,2,3,4];
+let b=[5,6,7,8];
+let arr=a.concat(b);
+let median;
+
+let c=function(){
+  let middleIndex=Math.floor(arr.length/2);
+  median=(arr[middleIndex]+arr[middleIndex-1])/2;
+  return median;
+}
+console.log(c());
+
+IIFE:Return the median fo two sorted arrays of same size
+let a=[1,2,3,4];
+let b=[5,6,7,8];
+let arr=a.concat(b);
+let median;
+
+(function a(){
+  let middleIndex=Math.floor(arr.length/2);
+  median=(arr[middleIndex]+arr[middleIndex-1])/2;
+  console.log(median);
+})
+
+();
+
+             g)
+Anonymous:Remove duplicates in an array
+var arr=[11,12,2,3,5,1,2,12];
+var d=function(){
+  var unique=[];
+  for(let i=0;i<arr.length;i++){
+    if(unique.indexOf(arr[i])===-1){
+     unique.push(arr[i]); 
+      
+    }
+    
+  }
+  return unique;
+  
+  
+}
+console.log(d());   
+
+IIFE:Remove duplicates in an array
+var arr=[11,12,2,3,5,1,2,12];
+(function foo(){
+  var unique=[];
+  for(let i=0;i<arr.length;i++){
+    if(unique.indexOf(arr[i])===-1){
+     unique.push(arr[i]); 
+      
+    }
+    
+  }
+ console.log (unique);
+  
+  
+})
+ 
+();   
+
+            h)
+Anonymous:Rotate an array by k times
+var arr=[1,2,3,4,5,6,7];
+let k=3;
+var a=arr.length-k;
+var b=[];
+var c=[];
+
+var r=function(){
+for(let i=4;i<arr.length;i++){
+  b.push(arr[i]);
+  
+}
+for(let j=0;j<a;j++){ 
+ c.push(arr[j]); 
+}
+return b.concat(c);
+}
+console.log(r());      
+
+IIFE: Rotate an array by k times
+var arr=[1,2,3,4,5,6,7];
+let k=3;
+var a=arr.length-k;
+var b=[];
+var c=[];
+
+(function foo(){
+for(let i=4;i<arr.length;i++){
+  b.push(arr[i]);
+  
+}
+for(let j=0;j<a;j++){ 
+ c.push(arr[j]); 
+}
+console.log( b.concat(c));
+})
+();   
+
+        
+
+
+
+
+
+
+
+Question:03 (Arrow Function)
+
+a)Return Odd numbers in an arrray
+let a=[1,2,3,4,5,6];
+ var odd=()=>{
+   let o=a.filter(n=>n%2!=0);
+ return o;
+   
+ }
+ console.log(odd());  
+
+b)Convert all the strings to title caps in a string array
+let a="India is my country";
+let b=a.split(" ");
+let e=[];
+var t=()=>{
+for(let i=0;i<b.length;i++){
+  let c=b[i];
+   let d=c.charAt(0).toUpperCase()+c.slice(1,c.length);
+   e.push(d);
+}
+ return e.join(" ");
+}
+console.log(t());   
+
+c) To sum all numbers in an array  
+
+let a=[1,2,3,4,5,6];
+var sum=()=>{
+let c=a.reduce((acc,ele)=>acc+ele);
+return (c);
+
+}
+console.log(sum());  
+
+d) Return all the prime numbers in an array
+
+var a=()=>{
+  var numArray=[2,3,4,5,6,7,8,9]
+  let b=numArray.filter((number)=>{
+    for(let i=2;i<=Math.sqrt(number);i++){
+      if(number%i===0)return false;
+    }
+   return true
+  });
+   return b;
+  }
+  console.log(a());
+
+e)Retrun all palindromes in an array
+var arr=["dad","mad","cat","mom"];
+var b=[];
+var palindrome=()=>{  
+  for(let i=0;i<arr.length;i++){
+    let a=arr[i].split("").reverse().join("");
+     if(arr[i]==a){
+       b.push(a);
+      }  
+  }
+  return b;
+ 
+}
+console.log(palindrome());    
