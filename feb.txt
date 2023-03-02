@@ -17,9 +17,9 @@ Anonymous:To find odd numbers
  })
  ();
 
-    b))
+    b...
 Anonymous function:Convert all the strings to title caps in a string array
-let a="India is my country";
+let a="my name is dhoni";
 let b=a.split(" ");
 let e=[];
 var t=function(){
@@ -34,7 +34,7 @@ console.log(t());
 
 
 IIFE:Convert all the strings to title caps in a string array
-let a="India is my country";
+let a="my name is dhoni";
 let b=a.split(" ");
 let e=[];
 (function foo(){
@@ -65,33 +65,8 @@ let o=a.reduce((acc,ele)=>acc+ele);
 console.log(o);
 })
 ();
-        d)
-Anonymous:Return all the prime numbers in an array
-var numArray=[2,3,4,5,6,7,8,9]
-let a=function(){
-  let b=numArray.filter((number)=>{
-    for(let i=2;i<=Math.sqrt(number);i++){
-      if(number%i===0)return false;
-    }
-    return true;
-  });
-    return b;
-  }
-console.log(a());
+       
 
-IIFE:Return all the prime numbers in an array
- 
-(function a(){
-  var numArray=[2,3,4,5,6,7,8,9]
-  let b=numArray.filter((number)=>{
-    for(let i=2;i<=Math.sqrt(number);i++){
-      if(number%i===0)return false;
-    }
-   return true
-  });
-    console.log(b);
-  })
-  ();          
 
 
           e)
@@ -247,7 +222,7 @@ let a=[1,2,3,4,5,6];
  console.log(odd());  
 
 b)Convert all the strings to title caps in a string array
-let a="India is my country";
+let a="my name is dhoni";
 let b=a.split(" ");
 let e=[];
 var t=()=>{
